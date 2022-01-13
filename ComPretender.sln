@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComPretender", "ComPretender.vcproj", "{F8C50E97-3864-4AEF-B493-F34AFD973C92}"
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8C50E97-3864-4AEF-B493-F34AFD973C92}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F8C50E97-3864-4AEF-B493-F34AFD973C92}.Debug|Win32.Build.0 = Debug|Win32
+		{F8C50E97-3864-4AEF-B493-F34AFD973C92}.Release|Win32.ActiveCfg = Release|Win32
+		{F8C50E97-3864-4AEF-B493-F34AFD973C92}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

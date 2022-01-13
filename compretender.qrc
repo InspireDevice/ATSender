@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/ComPretender">
+        <file>pretender.ico</file>
+    </qresource>
+</RCC>

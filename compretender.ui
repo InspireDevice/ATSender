@@ -1,0 +1,232 @@
+<ui version="4.0" >
+ <class>ComPretenderClass</class>
+ <widget class="QMainWindow" name="ComPretenderClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>624</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>AT sender - http://inspire-device.com</string>
+  </property>
+  <property name="toolTip" >
+   <string>http://inspire-device.com</string>
+  </property>
+  <widget class="QWidget" name="centralWidget" >
+   <layout class="QVBoxLayout" name="verticalLayout_3" >
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2" >
+      <item>
+       <widget class="QLabel" name="label" >
+        <property name="text" >
+         <string>1) Select port for data sending:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comPortSelect" >
+        <property name="minimumSize" >
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" >
+      <item>
+       <widget class="QLabel" name="label_2" >
+        <property name="text" >
+         <string>2) Select file for responding on commands</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="DevicesCombo" >
+        <property name="toolTip" >
+         <string>Select device file</string>
+        </property>
+        <property name="maxCount" >
+         <number>500</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" >
+      <item>
+       <widget class="QLabel" name="label_3" >
+        <property name="text" >
+         <string>3) Open port and start to work ;)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="comConnect" >
+        <property name="maximumSize" >
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Open</string>
+        </property>
+        <property name="default" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="comRefresh" >
+        <property name="maximumSize" >
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Refresh</string>
+        </property>
+        <property name="default" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="comDisconnect" >
+        <property name="maximumSize" >
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Close</string>
+        </property>
+        <property name="default" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox" >
+      <property name="title" >
+       <string>Just for test:</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout" >
+       <item row="0" column="0" colspan="5" >
+        <widget class="QLineEdit" name="lineATcmd" >
+         <property name="text" >
+          <string>ATI</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QPushButton" name="pushButton" >
+         <property name="text" >
+          <string>SendHexString</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4" >
+        <widget class="QPushButton" name="sendATcmd" >
+         <property name="text" >
+          <string>Send AT</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3" >
+        <widget class="QPushButton" name="startComunicate" >
+         <property name="text" >
+          <string>startComunicate</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2" >
+        <widget class="QPushButton" name="seeChars" >
+         <property name="minimumSize" >
+          <size>
+           <width>2</width>
+           <height>2</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>See chars</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2" >
+      <property name="text" >
+       <string>Set Start unlock mode</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit" >
+      <property name="maximumSize" >
+       <size>
+        <width>16777215</width>
+        <height>320</height>
+       </size>
+      </property>
+      <property name="readOnly" >
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>pushButton_2</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>groupBox</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>624</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar" >
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar" />
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>
